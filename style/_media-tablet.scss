@@ -1,0 +1,20 @@
+@media only screen and (max-width: 768px) {
+  .main {
+    h1 {
+      font-size: 72px;
+      font-style: normal;
+      line-height: 82.8px; /* 115% */
+      letter-spacing: -1.6px;
+    }
+
+    p {
+      width: 573.5px;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    .img-desktop {
+      width: 617px;
+      height: 512px;
+    }
+  }
+}
