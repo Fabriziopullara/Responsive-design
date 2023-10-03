@@ -1,5 +1,4 @@
 .navigation-bar {
-
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -17,6 +16,16 @@
   }
   li {
     padding-right: 10px;
-    font-family: 'Source Sans 3', sans-serif;
+    font-family: "Source Sans 3", sans-serif;
+  }
+
+  .checkbtn{
+    font-size: 25px;
+    cursor: pointer;
+   display: none;
+  }
+
+  #check{
+    display: none;
   }
 }

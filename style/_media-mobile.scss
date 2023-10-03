@@ -17,5 +17,38 @@
       font-weight: 400;
       line-height: 18px; /* 150% */
     }
+    .img-desktop {
+      width: 256px;
+      height: 284px;
+    }
+  }
+
+
+  .navigation-bar{
+    padding: 0px 50px;
+
+    .checkbtn{
+      display: block;
+    }
+
+    ul{
+      width: 100%;
+      height: 100vh;
+      background-color: rgb(211, 211, 211);
+      position: fixed;
+      top: 75px;
+      left: -500px;
+      text-align: center;
+    }
+    li{
+      display: block;
+      flex-direction:column;
+    }
+
+  
+  }
+  #check:checked ~ ul{
+    left: 0;
+
   }
 }
