@@ -13,8 +13,13 @@
       flex-wrap: wrap;
     }
     .img-desktop {
+      display: none;
+    }
+    .img-tablet {
+      display: block;
       width: 617px;
       height: 512px;
     }
+  
   }
 }

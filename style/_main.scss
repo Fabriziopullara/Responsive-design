@@ -1,3 +1,4 @@
+
 .main {
   align-items: center;
   display: flex;
@@ -28,6 +29,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 33px; /* 150% */
+    padding-bottom: 20px;
   }
 
   .img-desktop{
@@ -35,4 +37,9 @@
     width: 100%;
     max-height: 328px;
   }
+
+.img-mobile,
+.img-tablet{
+  display: none;
+}
 }
