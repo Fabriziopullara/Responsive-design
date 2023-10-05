@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .main {
     h1 {
       text-align: center;
@@ -30,14 +30,12 @@
   }
 
   .navigation-bar {
-    padding: 0px 50px;
+    .links {
+      display: none;
+    }
 
     i {
       display: block;
-    }
-
-    ul {
-      display: none;
     }
   }
 }

@@ -7,28 +7,24 @@
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   padding: 20px;
+  background-color: lightgrey;
 }
 .navigation-bar h3 {
   font-family: "Aldrich", sans-serif;
 }
-.navigation-bar ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  list-style: none;
-}
 .navigation-bar a {
   text-decoration: none;
   color: #242635;
+  display: block;
+  float: right;
+  padding: 10px;
+  font-family: "Aldrich", sans-serif;
 }
-.navigation-bar li {
-  padding-right: 10px;
-  font-family: "Source Sans 3", sans-serif;
+.navigation-bar a:hover {
+  background-color: lightgreen;
+  padding: 10px;
+  border-radius: 5px;
 }
 .navigation-bar i {
   display: none;
@@ -105,7 +101,7 @@
     height: 512px;
   }
 }
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .main h1 {
     text-align: center;
     font-size: 36px;
@@ -132,13 +128,53 @@
     width: 256px;
     height: 284px;
   }
-  .navigation-bar {
-    padding: 0px 50px;
+  .navigation-bar .links {
+    display: none;
   }
   .navigation-bar i {
     display: block;
   }
-  .navigation-bar ul {
+}
+@media screen and (max-width: 480px) {
+  .navigation-bar .links {
     display: none;
+  }
+  .navigation-bar .links.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 480px) {
+  .navigation-bar.responsive {
+    position: relative;
+  }
+  .navigation-bar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .responsive .links {
+    float: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+    background-color: beige;
+    width: 100%;
+    margin: 10px;
+    height: 100%;
+  }
+  .responsive .links :hover {
+    background-color: rgba(255, 255, 0, 0.451);
+  }
+  .navigation-bar {
+    background-color: white;
   }
 }
